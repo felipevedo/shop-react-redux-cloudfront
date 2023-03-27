@@ -1,4 +1,4 @@
-CloudFront URL: d2p0kezoaruju7.cloudfront.net
+Published app [here](https://d2p0kezoaruju7.cloudfront.net) 
 
 # React-shop-cloudfront
 

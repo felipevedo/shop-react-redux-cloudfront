@@ -7,8 +7,20 @@ import PageProductImport from "~/components/pages/admin/PageProductImport/PagePr
 import PageCart from "~/components/pages/PageCart/PageCart";
 import PageProducts from "~/components/pages/PageProducts/PageProducts";
 import { Typography } from "@mui/material";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    localStorage.setItem(
+      "authorization_token",
+      "ZmVsaXBldmVkbzpURVNUX1BBU1NXT1JE"
+    );
+
+    return () => {
+      localStorage.removeItem("authorization_token");
+    };
+  }, []);
+
   return (
     <MainLayout>
       <Routes>
